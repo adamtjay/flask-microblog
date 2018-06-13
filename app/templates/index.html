@@ -1,8 +1,8 @@
 {% extends "nav.html" %}
 
 {% block content %}
-    <h1>Hi, {{ user.username }}!</h1>
+    <h1>Welcome, {{ user.username }}</h1>
     {% for post in posts %}
-    <div><p>{{ post.author.username }}'s post': <b>{{ post.body }}</b></p></div>
+    <div><p>{{ post.author.username }}'s post: <b>{{ post.body }}</b></p></div>
     {% endfor %}
 {% endblock %}
